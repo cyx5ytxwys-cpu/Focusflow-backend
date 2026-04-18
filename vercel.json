@@ -1,9 +1,0 @@
-const Anthropic = require('@anthropic-ai/sdk');
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-const SYSTEM_PROMPT = `You are FocusFlow AI, a supportive productivity coach. Help users stay focused, break down tasks, and celebrate wins. Be warm, concise, and energizing.`;
-
-module.exports = async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
-  if (req.method === 'OPTIONS') { res.status(200).end(); return; }
-  if (req.method !==​​​​​​​​​​​​​​​​
